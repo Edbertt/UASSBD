@@ -17,7 +17,7 @@ MariaDB [task_manager]> SHOW TABLES;
 +------------------------+
 10 rows in set (0.001 sec)
 
-MariaDB [task_manager]> SHOW TABLES;CREATE VIEW nim_211402128 ASSELECT a.id as 'Task Id', a.task_name as 'Nama Task', a.task_status as 'Status', a.category_id as 'Kategori Indikator', b.category_name as 'Kategori', c.indicator_name as 'Indikator', a.user_create as 'Creator Id', d.name as 'Creator Name', a.task_priority as 'Prioritas'FROM task_plans aRIGHT JOIN task_categories bON a.categoryCREATE VIEW nim_211402004 ASGHT JOIN task_indicators cON a.category_id = c.idRIGHT JOIN users dON a.user_create = d.id;
+MariaDB [task_manager]> SHOW TABLES;
 +------------------------+
 | Tables_in_task_manager |
 +------------------------+
